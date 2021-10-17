@@ -1,8 +1,8 @@
 name: ci
 
 on:
-  workflows_run:
-    worflows: ['Lint Rubocop']
+  workflow_run:
+    workflows: ['Lint Rubocop']
     branches: [main, develop]
     type:
       - completed

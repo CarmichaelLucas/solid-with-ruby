@@ -3,7 +3,8 @@
 require 'minitest/autorun'
 require_relative '../src/email_service'
 
-class EmailTest < Minitest::Test
+# Teste de Email Service
+class EmailServiceTest < Minitest::Test
   def setup
     @email = EmailService.new
   end

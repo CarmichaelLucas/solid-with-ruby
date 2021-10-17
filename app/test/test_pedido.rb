@@ -3,6 +3,7 @@
 require 'minitest/autorun'
 require_relative '../src/pedido'
 
+# Teste Pedido
 class PedidoTest < Minitest::Test
   def setup
     @pedido = Pedido.new

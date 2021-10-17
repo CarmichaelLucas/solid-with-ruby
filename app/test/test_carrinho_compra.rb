@@ -4,6 +4,7 @@ require 'faker'
 require 'minitest/autorun'
 require_relative '../src/carrinho_compra'
 
+# Teste Carrinho
 class CarrinhoCompraTest < Minitest::Test
   def setup
     @item = Item.new

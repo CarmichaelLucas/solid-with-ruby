@@ -3,6 +3,7 @@
 require 'minitest/autorun'
 require_relative '../src/item'
 
+# Teste Item
 class ItemTest < Minitest::Test
   def setup
     @item = Item.new

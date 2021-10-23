@@ -6,6 +6,8 @@ on:
   pull_request:
     branches: [main]
 
+  workflow_dispatch:
+
 jobs:
   rspec-with-ruby:
     runs-on: ubuntu-latest
@@ -15,4 +17,4 @@ jobs:
         with:
           ruby-version: '3.0.2'
       - run: bundle install
-      - run: rubocop -a app/
+      - run: rubocop app/

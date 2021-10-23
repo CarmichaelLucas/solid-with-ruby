@@ -24,7 +24,7 @@ class CarrinhoCompraTest < Minitest::Test
 
   def test_adicionar_item_with_success
     carrinho = CarrinhoCompra.new
-    carrinho.adiciona_item(@item)
+    carrinho.adicionar_item(@item)
 
     assert_equal @item, carrinho.itens.first
   end
@@ -32,7 +32,7 @@ class CarrinhoCompraTest < Minitest::Test
   def test_adicionar_item_without_success
     assert_raises 'Parâmetro item invalido' do
       carrinho = CarrinhoCompra.new
-      carrinho.adiciona_item('Item')
+      carrinho.adicionar_item('Item')
     end
   end
 
@@ -43,7 +43,7 @@ class CarrinhoCompraTest < Minitest::Test
 
   def test_validar_carrinho_cheio
     carrinho = CarrinhoCompra.new
-    carrinho.adiciona_item(@item)
+    carrinho.adicionar_item(@item)
     refute carrinho.validar_carrinho_vazio
   end
 end

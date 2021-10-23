@@ -10,7 +10,7 @@ class CarrinhoCompra
     @itens = []
   end
 
-  def adiciona_item(item)
+  def adicionar_item(item)
     raise ParameterItemError, 'Parâmetro item invalido' unless item.is_a?(Item)
 
     @itens.push(item)

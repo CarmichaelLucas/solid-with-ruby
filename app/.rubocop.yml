@@ -3,3 +3,5 @@ require: rubocop-minitest
 AllCops:
   Exclude:
     - 'app.rb'
+    - 'app2.rb'
+    
